@@ -1,0 +1,35 @@
+.product{
+    margin-left: 390px;
+    background-color: rgb(181, 201, 204);  
+}
+.product h2{
+    padding: 2%;
+    text-align: center;
+}
+.skills{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.product .post .image:hover{
+    box-shadow: 1px 2px 15px 5px rgb(93, 84, 84);
+
+}
+
+.post .image{
+    width: 300px;
+    height: 200px;
+}
+.post .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
+}
+.post h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500px;
+}
+
