@@ -1,11 +1,13 @@
 import React from 'react'
 import './product.css'
+import '../cssforall/main.css'
 import web from '../Static/Image/web.gif'
 import photography from '../Static/Image/photography.gif'
 import video from '../Static/Image/videography.gif'
 import digital from '../Static/Image/digital.gif'
 import graphic from '../Static/Image/design.gif'
 import stock from '../Static/Image/stock.gif'
+import Nav from '../Nav/Nav'
 
 
 export default function Product() {
@@ -40,6 +42,10 @@ const Sample=[{
    
 
   return (
+    <div className="container">
+    
+     <Nav/>
+     <div className="content">
     <div className='product'>
         <h2>Product I can produces</h2>
         <div className="skills">
@@ -52,14 +58,16 @@ const Sample=[{
 </div>
 
 
+
     
 )
 
 )}
         </div>
-
+        </div>
         
       
+    </div>
     </div>
   )
 }

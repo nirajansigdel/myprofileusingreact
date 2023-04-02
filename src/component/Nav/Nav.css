@@ -1,31 +1,25 @@
 .Navbar{
     display: flex;
-    justify-content: space-a;
-
-    
-}
-
-.navitem{
-    display: flex;
-    width:25%;
-    text-align: center;
     flex-direction: column;
-    background-color: white;
-    height: 100vh;
-    padding-top: 5%;
-    margin-right: 200px;
-   position: fixed;
-   left: 4px;
-
-
-
-
+    width: 22%;
+   align-items: center;
     
 }
-.navitem  li{ 
+.Navbar ul{
+
     list-style: none;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 3.7rem;
+}
+.Navbar ul {
     text-decoration: none;
-    padding: 1.7rem 0;
+    padding: 4% 0;
+
+}
+
+.Navbar  ul  li{ 
     font-size: 1.4rem;
     font-weight: 300;
     color: black;
@@ -34,11 +28,7 @@
     letter-spacing: 1px;
 
 }
-.navitem  li:hover{ 
+.Navbar  li:hover{ 
 color: blue;
 
-}
-.Navbar .pages{
-width: 100%;    
-background-color: white;
 }

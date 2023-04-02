@@ -1,29 +1,17 @@
 import React from 'react'
-import About from '../About/About'
-import Contact from '../Contact/Contact'
-import Home from '../Home/Home'
-import Product from '../Product/product'
 import './Nav.css'
+import { Link } from 'react-router-dom'
 export default function Nav() {
   return (
     <div className='Navbar'>
-      <div className="navitem">  
-      <ul>
-     <li>Home</li>
-       <li>About</li>
-     <li>Product</li>
-     <li>Project</li>
-      <li>Resume</li>
-    <li>Contact</li>
-      </ul>
-      </div>
-      <div className="pages">
-        <Home/>
-        <About/>
-        <Product/>
-        <Contact/>
-      </div>
-     
+    <ul>
+  <Link to='/'><li>Home</li></Link>
+   <Link to='/about'><li>About </li></Link>
+   <Link to='/product'><li>Product</li></Link>
+   <Link to='/project'><li>Project</li></Link>  
+   <Link to='/resume'><li>Resume</li></Link>  
+   <Link to='/contact'><li>Contact</li></Link>  
+   </ul> 
       </div>
       
 

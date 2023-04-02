@@ -1,3 +1,116 @@
-.contact{
-    margin-left: 400%;
+.contact,
+.information .boxs,
+.contact form,
+.contact form .section,
+.detial,
+.detial .thank_you_message {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+
+    background-image: linear-gradient(rgba(191, 183, 167, 0.361), white);
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+.information .boxs {
+    width: 15%;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    border: 8px solid beige;
+    border-radius: 10%;
+    margin: 7% 0 0 0;
+    box-shadow: 2px 2px 10px 1px rgb(118, 95, 95);
+    transform: scale(1, 1.8);
+
+}
+
+.information .boxs .icon {
+    color: rgb(132, 46, 73);
+    font-size: 1.5rem;
+
+}
+
+.information .boxs span {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.contact .description {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #da1f6a, #212aae);
+    padding-top: 5%;
+}
+
+.contact form {
+    gap: 20px;
+    width: 40%;
+}
+
+.contact form label {
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.5% 0;
+
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: none;
+}
+
+.contact form input,
+.contact form textarea {
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    stroke: none;
+    font-size: 1rem;
+    resize: none;
+
+
+}
+
+.contact form button {
+    border: 1px solid white;
+    margin: 1% 0;
+    font-size: 1.2rem;
+    color: rgb(132, 46, 73);
+
+}
+
+.description {
+    padding: 0 0 5% 0;
+}
+
+.detial {
+    width: 50%;
+    gap: 35px;
+}
+
+.detial .thank_you_message {
+    width: 90%;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, serif;
+    color: rgb(237, 234, 234);
+
+}
+
+.social_Media {
+    color: white;
+    font-size: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
