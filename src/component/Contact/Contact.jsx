@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import '../cssforall/main.css'
-import { FaAddressBook } from "react-icons/fa";
+import { FaAddressBook, FaWhatsapp } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -10,8 +10,14 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 import Nav from '../Nav/Nav'
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
+  //function call of button.ie authentication
+  function validation(){
+    <dd></dd>
+  }
+
   return (
     <div className="container">
       <Nav />
@@ -40,9 +46,9 @@ export default function Contact() {
             </div>
             <div className="boxs">
               <div className="icon">
-                <FaAddressBook />
+                <FaWhatsapp />
               </div>
-              <span><b>Demo</b> <br />fine i am </span>
+              <span><b>Whatapps</b> <br />9864047178 </span>
             </div>
 
           </div>
@@ -66,7 +72,7 @@ export default function Contact() {
                 <label htmlFor="name">Message</label>
                 <textarea name="" id="" cols="50" rows="3" placeholder='Enter your message'></textarea>
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit" onClick={validation}>Submit</button>
             </form>
 
             <div className="detial">
@@ -76,10 +82,11 @@ export default function Contact() {
                 <span>Don't forget to give your value message to me </span>
               </div>
               <div className="social_Media">
-                <FaGitAlt />
-                <FaFacebook />
-                <FaTwitter />
-                <FaLinkedin />
+                <Link to='https://github.com/nirajansigdel'><FaGitAlt /></Link>
+                <Link to='https://www.facebook.com/unique.sigdel.56'> <FaFacebook /></Link>
+                <Link to='https://www.twitter.com/@sigdelNirajan'> <FaTwitter /></Link>
+                <Link to='https://github.com/nirajansigdel'><FaLinkedin /></Link>
+                
               </div>
             </div>
           </div>

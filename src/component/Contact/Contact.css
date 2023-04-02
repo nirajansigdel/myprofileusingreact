@@ -9,7 +9,6 @@
 }
 
 .contact {
-
     background-image: linear-gradient(rgba(191, 183, 167, 0.361), white);
 }
 
@@ -87,6 +86,7 @@
     margin: 1% 0;
     font-size: 1.2rem;
     color: rgb(132, 46, 73);
+    cursor: pointer;
 
 }
 
@@ -107,10 +107,14 @@
 
 }
 
-.social_Media {
-    color: white;
-    font-size: 2rem;
+.detial .social_Media  {
+    color:white !important;
+    font-size: 2.2rem!important;
     width: 50%;
     display: flex;
     justify-content: space-between;
+}
+.social_Media :hover{
+    opacity: 1;
+    color: black;
 }
