@@ -1,5 +1,6 @@
 .product{
-    background-color: rgb(181, 201, 204);  
+    height: 100VH;
+
 }
 .product h2{
     padding: 2%;
@@ -12,7 +13,7 @@
     flex-flow: row wrap;
 }
 .product .post .image:hover{
-    box-shadow: 1px 2px 15px 5px rgb(93, 84, 84);
+    box-shadow: 1px 2px 10px 2px rgb(93, 84, 84);
 
 }
 
@@ -31,4 +32,13 @@
     font-size: 1.5rem;
     font-weight: 500px;
 }
+
+/*
+
+
+
+
+
+
+}*/
 

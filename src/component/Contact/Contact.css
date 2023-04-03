@@ -9,6 +9,8 @@
 }
 
 .contact {
+    height: 100vh;
+    
     background-image: linear-gradient(rgba(191, 183, 167, 0.361), white);
 }
 
@@ -40,7 +42,7 @@
 .information .boxs span {
     font-size: 1rem;
     font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, serif;
     letter-spacing: 1px;
 }
 
@@ -80,6 +82,10 @@
 
 
 }
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+    color: rgb(179, 165, 141);
+} 
 
 .contact form button {
     border: 1px solid white;

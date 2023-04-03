@@ -11,63 +11,67 @@ import Nav from '../Nav/Nav'
 
 
 export default function Product() {
-const Sample=[{
-        id:1,
-        image:web,
-        title:"Web development"
-    },{
-        id:2,
-        image:photography,
-        title:"photography"
-    },
-    {
-        id:3,
-        image:video,
-        title:"Video Editing"
-    },
-    {
-        id:4,
-        image:digital,
-        title:"Digital Marketing"
-    },
-    {
-        id:5,
-        image:graphic,
-        title:"Graphic"
+
+    //==========creating the demo data ==================
+    const Sample = [{
+        id: 1,
+        image: web,
+        title: "Web development"
     }, {
-        id:6,
-        image:stock,
-        title:"Stock Training"
+        id: 2,
+        image: photography,
+        title: "photography"
+    },
+    {
+        id: 3,
+        image: video,
+        title: "Video Editing"
+    },
+    {
+        id: 4,
+        image: digital,
+        title: "Digital Marketing"
+    },
+    {
+        id: 5,
+        image: graphic,
+        title: "Graphic"
+    }, {
+        id: 6,
+        image: stock,
+        title: "Stock Training"
     }]
-   
-
-  return (
-    <div className="container">
-    
-     <Nav/>
-     <div className="content">
-    <div className='product'>
-        <h2>Product I can produces</h2>
-        <div className="skills">
-{Sample.map(sample=>(
-<div className="post" key={sample.id}>
-    <div className="image">
-    <img src={sample.image} alt="sorry" srcset="" />
-    </div>
-    <h1>{sample.title}</h1>
-</div>
 
 
+    return (
+        <div className="container">
+            <Nav />
+            <div className="content">
+                <div className='product'>
+                    <h2>Product I can produces</h2>
+                    <div className="skills">
 
-    
-)
+ {/* =====use of map function inorder to fetch and travel the array======== */}
+                      
+                        {Sample.map(sample => (
+                            <div className="post" key={sample.id}>
+                                <div className="image">
+                                    <img src={sample.image} alt="sorry" srcset="" />
+                                </div>
+                                <h1>{sample.title}</h1>
+                            </div>
 
-)}
+
+
+
+                        )
+
+                        )}
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-        </div>
-        
-      
-    </div>
-    </div>
-  )
+    )
 }

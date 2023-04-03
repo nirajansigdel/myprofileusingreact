@@ -1,8 +1,12 @@
 .container{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background-color: #749296;
+    
 }
 .content{
+    margin-left:23%;
     width: 75%;
-    padding:1% 0 0 0;
+   
 }

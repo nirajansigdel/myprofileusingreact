@@ -4,7 +4,7 @@ import Contact from './component/Contact/Contact';
 import About from './component/About/About';
 import Product from './component/Product/product';
 import Project from './component/Project/Project';
-import Resume from './component/Resume/Resume';
+import Mokk from './component/moving/Mon';
 
 function App() {
   return (
@@ -16,8 +16,7 @@ function App() {
     <Route exact path='/about' element={ <About/>}></Route>
     <Route exact path='/product' element={<Product/>}></Route>
     <Route exact path='/project' element={<Project/>}></Route>
-    <Route exact path='/resume' element={<Resume/>}></Route>
-    <Route exact path='/contact' element={ <Contact/>}></Route>
+     <Route exact path='/contact' element={ <Contact/>}></Route> 
   </Routes>
   </BrowserRouter>
     </div>
